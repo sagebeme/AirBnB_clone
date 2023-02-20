@@ -1,11 +1,18 @@
-body{
+/*
+ * === Global style ===
+ */
+
+/* Body style */
+body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     color: #484848;
     size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Container style */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
 }
