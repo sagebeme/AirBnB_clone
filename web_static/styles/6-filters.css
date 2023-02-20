@@ -30,15 +30,16 @@
 }
 
 /* Locations and amenities */
-.locations, .amenities{
+.filters .locations,.filters .amenities{
     display: inline-block;
+    position: relative;
     height: 100%;
     width: 25%;
 }
 
 /* Locations border */
 .locations {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #DDDDDD;
 }
 
 /* Header 3 style */
@@ -68,4 +69,13 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.filters .popover{
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
 }
