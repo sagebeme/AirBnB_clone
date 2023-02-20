@@ -30,7 +30,8 @@
 }
 
 /* Locations and amenities */
-.filters .locations,.filters .amenities{
+.filters .locations,
+.filters .amenities{
     display: inline-block;
     position: relative;
     height: 100%;
@@ -38,10 +39,43 @@
 }
 
 /* Locations border */
-.locations {
+.filters .locations {
     border-right: 1px solid #DDDDDD;
 }
 
+/* Locations and amenities hover opacity */
+.filters .locations:hover,
+.filters .amenities:hover {
+  background-color: #FAFAFA;
+}
+
+/* Locations and Amenities popper Menu */
+.filters .popover{
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+/* popover hover */
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover{
+    display: block;
+}
+
+/* Locations lists element margin */
+.filters .locations ul{
+    padding: 6px 0;
+}
+
+/* Amenities list element margin */
+.filters .amenities li {
+    margin: 12px auto 12px 30px;
+  }
+
+/******************* Headers *******************/
 /* Header 3 style */
 .filters h3 {
   font-size: 1.17em;
@@ -69,13 +103,4 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.filters .popover{
-    display: none;
-    background-color: #FAFAFA;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px;
-    position: absolute;
-    width: 100%;
 }
